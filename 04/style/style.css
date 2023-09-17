@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: block;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    padding: 36px 0;
+}
+.content{
+    width: 293px;
+    margin: 15px 32px 0 32px;
+}
+.box-container{
+    margin: 0 22px;
+    width: 301px;
+}
+.start h1{
+    margin: 0;
+}
+h1{
+    font-size: 32px;
+}
+.start form{
+    padding: 25px 0;
+}
+.start form input{
+    width: 316px;
+    background-color: #EFEFEF;
+    color: #999;
+    font-size: 12px;
+    padding: 18px 15px;
+    border-radius: 12px;
+    border: none;
+}
+.start form input:focus{
+    outline: none;
+}
+.icon-container{
+    display: flex;
+}
+.icon{
+    padding-right: 24px;  
+}
+.icon:last-child{
+    padding-right: 0;
+}
+.burger-container{
+    padding: 39px 0;
+}
+.burger-container h2{
+    margin: 0;
+    padding-bottom: 26px;
+}
+h2{
+    font-size: 20px;
+}
+.burger-icon{
+    padding-bottom: 12px;
+}
