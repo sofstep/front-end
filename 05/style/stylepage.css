@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: block;
+    /* background-image: url(../img/Image\ \(3\).png); */
+}
+.clearfix::before, .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+header{
+    padding: 41px 120px;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo {
+    float: left; 
+    margin-right: 20px; 
+}
+
+nav{
+    float: right;
+}
+nav a{
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav a:nth-child(4){
+    margin-right: 40px;
+}
+nav button{
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #386E41;
+    color: white;
+    outline: none;
+}
+button:focus {
+    outline: none; 
+}
+.container{
+    padding: 0 120px;
+}
+.text-block{
+    padding-top: 166px;
+    width: 526px;
+    float: left;
+    margin-bottom: 234px;
+}
+.text-block h1{
+    margin: 0;
+}
+h1{
+    font-size: 36px;
+}
+span{
+    color: #BC436A;
+}
+p{
+    color: #7A7A7A;
+    font-size: 18px;
+}
+.filter-block{
+    float: left;
+}
+.filter-block h3{
+    margin: 0;
+}
+h3{
+    font-size: 18px;
+    color: #767676;
+    padding-bottom: 33px;
+    position: relative;
+}
+h3::after{
+    content: "";
+    background-image: url(../img/chevron-right.jpg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    width: 24px; 
+    height: 24px; 
+    display: inline-block;
+    margin-left: 24px; 
+    position: absolute;
+}
+.filter-block-form{
+    padding: 34px 38px;
+    width: 1200px;
+    border-radius: 8px;
+    background-color: #386E41;
+}
+form input{
+    margin-right: 75px;
+    /* background-image: url(../img/chevron-down.png); */
+    border-bottom: solid white;
+    
+}
+form input::placeholder{
+    font-size: 18px;
+    color: white;
+    background-color: #386E41;
+}
+form input::after{
+    content: "";
+    background-image: url(../img/chevron-down.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    width: 24px; 
+    height: 24px; 
+    display: inline-block;
+    margin-left: 24px; 
+    position: absolute;
+}
+.filter-block-form button{
+    padding: 8px 21px;
+    text-align: center;
+    color: white;
+    background-color: #BC436A;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.041);
+}
+.filter-block a{
+    color: #767676;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 72px;
+    position: absolute;
+    left: 652px;
+}
