@@ -4,7 +4,11 @@
 body{
     margin: 0;
     display: block;
-    /* background-image: url(../img/Image\ \(3\).png); */
+    background-color: #F8FAF8;
+    background-image: url(../img/Image\ \(3\).png), url(../img/Shap.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right , left 521px;
+    
 }
 .clearfix::before, .clearfix::after {
     content: "";
@@ -14,10 +18,13 @@ body{
 header{
     padding: 41px 120px;
 }
+.inner-container{
+
+}
 .container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    width: 1198px;
+    margin: 0 ;
+    padding: 0 120px;
 }
 .logo {
     float: left; 
@@ -46,11 +53,9 @@ nav button{
 button:focus {
     outline: none; 
 }
-.container{
-    padding: 0 120px;
-}
+
 .text-block{
-    padding-top: 166px;
+    padding-top: 230px;
     width: 526px;
     float: left;
     margin-bottom: 234px;
@@ -82,7 +87,7 @@ h3{
 }
 h3::after{
     content: "";
-    background-image: url(../img/chevron-right.jpg);
+    background-image: url(../img/chevron-right.png);
     background-repeat: no-repeat;
     background-size: 24px;
     width: 24px; 
@@ -97,6 +102,7 @@ h3::after{
     border-radius: 8px;
     background-color: #386E41;
 }
+
 form input{
     margin-right: 75px;
     /* background-image: url(../img/chevron-down.png); */
@@ -134,4 +140,28 @@ form input::after{
     padding-top: 72px;
     position: absolute;
     left: 652px;
+}
+.see-more{
+    position: absolute;
+    text-align: center;
+    width: 136px;
+    top: 72px;
+    left: 0;
+}
+.see-more::after{
+    content: "";
+    background-image: url(../img/chevrons-down\ \(1\).svg);
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 43px;
+    left: 56px;
+
+}
+.see-more p{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
 }

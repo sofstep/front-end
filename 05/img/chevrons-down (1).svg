@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#E5E5E5"/>
+<g id="Landing page" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1024" transform="translate(-708 -959)" fill="#F8FAF8"/>
+<g id="See desitinations">
+<g id="chevrons-down">
+<path id="Vector" d="M7 13L12 18L17 13" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M7 6L12 11L17 6" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1024" fill="white" transform="translate(-708 -959)"/>
+</clipPath>
+</defs>
+</svg>
