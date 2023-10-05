@@ -1,0 +1,43 @@
+@import url(normalize.css);
+header{
+    display: flex;
+    padding: 55px 137px;
+    justify-content: space-between;
+}
+.room a{
+    text-decoration: none;
+    font-size: 32px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 19px;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+.category a{
+    text-decoration: none;
+    font-size: 19px;
+}
+nav, a{
+    position: relative;
+}
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    background-color: #F2994A;;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  a:hover::after {
+    opacity: 1;
+  }
+.category a{
+    margin-right: 31px;
+}
