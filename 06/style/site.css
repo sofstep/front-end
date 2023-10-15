@@ -1,7 +1,26 @@
 @import url(normalize.css);
+
+
 body{
-    background-color: burlywood;
+    position: relative;
+    background-color: white;
+    font-family: 'Nunito Sans', sans-serif;
 }
+body::before{
+    position: absolute;
+    content: " ";
+    width: 118px;
+    height: 1055px;
+    background-color: #F9F9F9;
+    left: 230px;
+    z-index: -1;
+}
+
+
+.room{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     display: flex;
     padding: 55px 137px;
@@ -27,17 +46,17 @@ nav a:last-child{
 nav, a{
     position: relative;
 }
-header a::after {
-    content: "";
+header a::after{
+    content:"";
     position: absolute;
     bottom: -8px;
-    left: 50%;
-    background-color: #F2994A;;
+    left:50%;
+    background-color: #F2994A;
     width: 7px;
     height: 7px;
     border-radius: 50%;
     opacity: 0;
-  }
+}
   a:hover::after {
     opacity: 1;
   }
@@ -111,7 +130,7 @@ h1{
 p{
     margin: 0;
 }
-p::before{
+.prg p::before{
     position: absolute;
     content: "";
     width: 188px;
@@ -147,32 +166,32 @@ p::before{
 .video a.video-link {
     text-decoration: none;
     display: flex;
-    align-items: center; /* Align link content horizontally */
+    align-items: center; 
 }
 .video span {
-    display: inline; /* Ensure the text is displayed inline */
+    display: inline; 
 }
 .line {
-    width: 1px; /* Ширина лінії */
-    height: 400px; /* Висота лінії */
-    background-color: #000; /* Чорний колір лінії */
-    position: absolute; /* Розташування абсолютне для позиціонування */
-    top: 252px; /* Відстань від верхнього краю */
-    right: 136px; /* Відстань від правого краю .down */
+    width: 1px; 
+    height: 400px; 
+    background-color: #000; 
+    position: absolute; 
+    top: 252px; 
+    right: 136px; 
 }
 
 .icons{
     position: relative;
     display: flex;
-    flex-direction: row-reverse; /* Розміщення від права до ліва */
+    flex-direction: row-reverse; 
     right: -26px;
     top: 10px;
 }
 .icons ul {
     /* display: inline-block; */
-    list-style-type: none; /* Встановити тип буллетів як "none" */
-    padding: 0; /* Встановити відступи для списку на 0, якщо потрібно */
-    margin: 0; /* Встановити зовнішні відступи списку на 0, якщо потрібно */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 .icons .list-icon{
     list-style: none;
@@ -181,46 +200,105 @@ p::before{
     display: block;
     margin-bottom: ;
 }
-.icons .list-icon li:first-child{
+.icons .list-icon li{
     margin-bottom: 18px;
 }
-.icons .list-icon li:nth-child(2){
+/* .icons .list-icon li:nth-child(2){
     margin-bottom: 26px;
-}
-.icons .list-icon li img {
-    width: 18px; /* Замініть це значення на бажану ширину */
-    height: 18px; /* Замініть це значення на бажану висоту */
+} */
+.icons .list-icon li a img {
+    width: 18px; 
+    height: 18px; 
 }
 
 .down {
     display: flex;
-    justify-content: space-between; /* Рівномірний розподіл простору між div.video і div.icons */
+    justify-content: space-between; 
     align-items: center; 
     margin-top: 39px;
 }
 .video {
     display: flex;
-    align-items: center; /* Вирівнювання по центру відносно осі Y (вертикаль) */
+    align-items: center; 
 }
 
-
-.icons .list-icon li:first-child a img:hover{
-    background-image: url(../img/twitter.svg);
+.icons .list-icon li:first-child:hover{
+    content: url(../img/Vector.svg);
     width: 18px;
     height: 18px;
 }
-/* .icons .list-icon li img:nth-child(2):hover{
-    color: black;
+
+.icons .list-icon li:nth-child(2):hover{
+    content: url(../img/instagram-hover.svg);
+    width: 18px;
+    height: 18px;
 }
-.icons .list-icon li img:last-child:hover{
-    color: white;
-    content: "";
+
+.icons .list-icon li:last-child:hover{
+    content: url(../img/facebook-hover.svg);
+    width: 17px;
+    height: 17px;
+}
+
+.icons .list-icon li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.icons .list-icon li a::after{
+    content:" ";
+    position: absolute;
+    bottom: -8px;
+    left:50%;
+    background-color: #F2994A;
     width: 34px;
     height: 34px;
     border-radius: 100px;
-    background: #F2994A;
-} 
-     */
-    
+    opacity: 0;
+}
+.icons .list-icon li:hover a::after{
+    opacity: 1;
+}
 
+/* footer */
 
+footer {
+    width: 100%;
+    padding: 43px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F9AB7;
+    margin-top: 32px;
+    margin-bottom: 45px;
+}
+
+.photos {
+    display: flex;
+    align-items: center;
+}
+
+.photos img {
+    margin-left: -22px;
+}
+
+.text-block {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.text-block span {
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+.photos p{
+    font-size: 24px;
+    color: white;
+}
+.photos .lol{
+    margin-left: 32px;
+    margin-right: 8px;
+}
